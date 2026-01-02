@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+.sidebar {
+  /* Estilos para a sidebar */
+}
+
+.sidebar a {
+  width: 20%;
+}
+
+:root {
+  --background: #2b2e33;
+  --foreground: #1d1d1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
