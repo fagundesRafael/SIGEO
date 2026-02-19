@@ -20,7 +20,7 @@ export async function GET(request, { params }) {
 export async function PUT(request, { params }) {
   try {
     await dbConnect();
-    const { id } = awaitparams;
+    const { id } = await params;
     const body = await request.json();
     
     // Validações para os campos obrigatórios
